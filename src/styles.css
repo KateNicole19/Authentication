@@ -5,29 +5,33 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 .main {
-  text-align: center
+  text-align: center;
+  display: block;
+  padding-top: 150px;
 }
 
 
 .main form,
 .main .details {
   width: 600px;
-  border: 1px solid #ddd;
-  margin: 15px;
   padding: 23px;
   text-align: center;
-  margin-left: 630px;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.main .details > div {
+.main .details>div {
   margin: 15px;
   font-weight: 200;
 }
 
-.main .details > h3 {
+.main .details>h3 {
   border-bottom: 1px solid #ccc;
   padding-bottom: 15px;
 }
@@ -36,10 +40,13 @@ input[type="tel"],
 input[type="email"],
 input[type="password"],
 input[type="text"] {
-  width: 300px;
+  width: 350px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 18px;
 }
 
-input{
+input {
   padding: 15px;
   margin: 10px
 }
@@ -53,7 +60,18 @@ button {
 h3 {
   margin: 5px;
   padding: 15px 15px 0px 15px;
-  font-weight: 300;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Segoe UI";
+
+}
+
+button {
+  width: 60%;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .errorMsg {
